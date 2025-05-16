@@ -224,8 +224,6 @@ pacman -Qi PACKAGE_NAME #show details
 pactree -r PACKAGE_NAME #show dependencies
 pactree -d1 PACKAGE_NAME #show dependents
 ```
-pacman -Qi PACKAGE_NAME
-```
 
 * List packages and their size
 ```
