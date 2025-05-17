@@ -84,6 +84,11 @@ tooltip {
   color: #d08770;
 }
 
+/* === UPDATER ===*/
+#custom-update {
+  padding: 0 7px;
+}
+
 /* === EXPANDER === */
 #custom-expand {
   padding: 0 7px;
