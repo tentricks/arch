@@ -2,12 +2,36 @@
 * {
   font-family: "JetBrainsMono Nerd Font", monospace;
   font-size: 14px;
-  color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.85); /* subtle transparency */
-  border: none;
-  border-radius: 0;
-  min-height: 0;
-  padding: 0 8px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* === ISLANDS === */
+.modules-left {
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 10px 0px 5px 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+}
+
+.modules-center {
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 10px 0px 5px 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+}
+
+.modules-right {
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 10px 10px 5px 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* === TOOLTIPS === */
+tooltip {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
 }
 
 /* === WORKSPACES === */
@@ -28,7 +52,7 @@
 }
 
 #workspaces button.active {
-  color: #00ffff; /* cyan for active */
+  color: #acc9ff; /* cyan for active */
   font-weight: bold;
 }
 
@@ -36,20 +60,9 @@
   color: #ffffff;
 }
 
-/* === CLOCK === */
-#clock {
-  color: #a3be8c;
-  font-weight: bold;
-}
-
-/* === VOLUME === */
-#pulseaudio {
-  color: #81a1c1;
-}
-
 /* === NETWORK === */
 #network {
-  color: #88c0d0;
+  color: #acc9ff;
 }
 
 #network.disconnected {
@@ -58,27 +71,13 @@
 
 /* === BATTERY === */
 #battery {
-  color: #ebcb8b;
+  color: #acc9ff;
 }
 
 #battery.charging {
-  color: #a3be8c;
+  color: #acc9ff;
 }
 
 #battery.warning {
   color: #d08770;
-}
-
-/* === CUSTOM UPDATE MODULE === */
-#custom-updates {
-  color: #f8f8f2;
-}
-
-#custom-updates:hover {
-  color: #8be9fd;
-}
-
-/* === SYSTEM TRAY === */
-#tray {
-  padding-right: 10px;
 }
