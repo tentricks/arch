@@ -110,7 +110,7 @@ sudo pacman -Syu
 ### 10. Installed minimal Hyprland setup
 
 ```
-sudo pacman -S hyprland wayland xdg-desktop-portal-hyprland wl-clipboard networkmanager kitty
+sudo pacman -S hyprland wayland xdg-desktop-portal-hyprland wl-clipboard networkmanager kitty pacman-contrib
 ```
 
 ---
@@ -181,6 +181,7 @@ Configure waybar
 ```
 mkdir -p ~/.config/waybar
 cp -r /etc/xdg/waybar/* ~/.config/waybar/
+```
 
 ### Install a notification daemon
 
