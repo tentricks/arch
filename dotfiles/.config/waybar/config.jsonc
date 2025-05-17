@@ -34,15 +34,16 @@
         "tooltip": false
     },
     "cpu": {
-        "format": "󰻠",
-        "tooltip": true
+        "format": "󰻠 {usage}%",
+        "tooltip": false
     },
     "memory": {
-        "format": ""
+        "format": " {used:0.1f}G / {total:0.1f}G",
+        "tooltip": false
     },
     "temperature": {
         "critical-threshold": 80,
-        "format": "",
+        "format": " {temperatureC}°C"
     },
     "custom/endpoint":{
         "format": "|",
