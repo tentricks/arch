@@ -135,11 +135,11 @@ Success! Tiling worked, terminal popped up, it lived 🎉
 
 ---
 
-## 🧙‍♂️ Post-Install
+## Post-Install
 
 ### Installed a login manager
 
-``` bash
+```
 sudo pacman -S sddm
 sudo systemctl enable sddm
 ```
@@ -147,11 +147,11 @@ sudo systemctl enable sddm
 - Make sure that `/usr/share/wayland-sessions/Hyprland.desktop` exists
 
 To create it:
-``` base
+```
 sudo nano /usr/share/wayland-sessions/hyprland.deskop
 ```
 Paste:
-```ini
+```
 [Desktop Entry]
 Name=Hyprland
 Comment=Wayland compositor
@@ -160,7 +160,27 @@ Type=Application
 DesktopNames=Hyprland
 ```
 
+### Install nerd fonts
+```
+sudo pacman -S ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols
+fc-cache -fv
+hyprctl reload
+```
+
 ### Install an app launcher
+
+### Install waybar
+```
+sudo pacman -S waybar
+```
+Add waybar to autostart in `~/.config/hypr/hyprland.conf
+```
+exec-once = waybar
+```
+Configure waybar
+```
+mkdir -p ~/.config/waybar
+cp -r /etc/xdg/waybar/* ~/.config/waybar/
 
 ### Install a notification daemon
 
