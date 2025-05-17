@@ -1,8 +1,8 @@
 /* === GLOBAL STYLE === */
 * {
-  font-family: "JetBrainsMono Nerd Font", monospace;
-  font-size: 14px;
-  background-color: rgba(0, 0, 0, 0);
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 /* === ISLANDS === */
@@ -34,77 +34,84 @@ tooltip {
     border-radius: 10px;
 }
 
+/* === CLOCK === */
+#clock {
+    padding: 0 7px;
+    color: #acc9ff;
+    transition: all .3s ease;
+}
+
 /* === WORKSPACES === */
 #workspaces {
-  padding: 0 8px;
+    padding: 0 8px;
 }
 
 #workspaces button {
-  background: transparent;
-  color: #555;
-  font-size: 16px;
-  padding: 0 6px;
-  border: none;
+    background: transparent;
+    color: #555;
+    font-size: 16px;
+    padding: 0 6px;
+    border: none;
 }
 
 #workspaces button.visible {
-  color: #888;
+    color: #888;
 }
 
 #workspaces button.active {
-  color: #acc9ff;
-  font-weight: bold;
+    color: #acc9ff;
+    font-weight: bold;
 }
 
 #workspaces button:hover {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 /* === NETWORK === */
 #network {
-  color: #acc9ff;
-  padding: 0 7px;
+    color: #acc9ff;
+    padding: 0 7px;
 }
 
 #network.disconnected {
-  color: #bf616a;
+    color: #bf616a;
 }
 
 /* === BATTERY === */
 #battery {
-  color: #acc9ff;
-  padding: 0 7px;
+    color: #acc9ff;
+    padding: 0 7px;
 }
 
 #battery.charging {
-  color: #acc9ff;
+    color: #acc9ff;
 }
 
 #battery.warning {
-  color: #d08770;
+    color: #d08770;
 }
 
 /* === UPDATER ===*/
 #custom-update {
-  padding: 0 7px;
+    padding: 0 7px;
 }
 
 /* === EXPANDER === */
 #custom-expand {
-  padding: 0 7px;
+    padding: 0 7px;
 }
 
 #custom-expand:hover {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 /* STATUS INDICATORS */
 #cpu {
-  padding: 0 7px;
+    padding: 0 7px;
 }
 #memory {
-  padding: 0 7px;
+    padding: 0 7px;
 }
 #temperature {
-  padding: 0 7px;
+    padding: 0 7px;
 }
