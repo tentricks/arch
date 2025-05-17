@@ -1,0 +1,84 @@
+/* === GLOBAL STYLE === */
+* {
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 13px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.85); /* subtle transparency */
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  padding: 0 6px;
+}
+
+/* === WORKSPACES === */
+#workspaces {
+  padding: 0 8px;
+}
+
+#workspaces button {
+  background: transparent;
+  color: #555;
+  font-size: 16px;
+  padding: 0 6px;
+  border: none;
+}
+
+#workspaces button.visible {
+  color: #888;
+}
+
+#workspaces button.active {
+  color: #00ffff; /* cyan for active */
+  font-weight: bold;
+}
+
+#workspaces button:hover {
+  color: #ffffff;
+}
+
+/* === CLOCK === */
+#clock {
+  color: #a3be8c;
+  font-weight: bold;
+}
+
+/* === VOLUME === */
+#pulseaudio {
+  color: #81a1c1;
+}
+
+/* === NETWORK === */
+#network {
+  color: #88c0d0;
+}
+
+#network.disconnected {
+  color: #bf616a;
+}
+
+/* === BATTERY === */
+#battery {
+  color: #ebcb8b;
+}
+
+#battery.charging {
+  color: #a3be8c;
+}
+
+#battery.warning {
+  color: #d08770;
+}
+
+/* === CUSTOM UPDATE MODULE === */
+#custom-updates {
+  color: #f8f8f2;
+}
+
+#custom-updates:hover {
+  color: #8be9fd;
+}
+
+/* === SYSTEM TRAY === */
+#tray {
+  padding-right: 10px;
+}

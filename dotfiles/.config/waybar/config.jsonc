@@ -1,0 +1,96 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "top",
+    "position": "top",
+
+    "reload_style_on_change": true,
+
+    "modules-left": ["tray"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["group/expand","custom/update","network","battery"],
+    
+    "tray": {
+        "icon-size": 14,
+        "spacing": 10
+    },
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+                "active": "",
+                "default": "",
+                "empty": ""
+        },
+        "persistent-workspaces": {
+            "*": [ 1,2,3,4,5 ]
+        }
+    },
+    
+    "custom/expand": {
+        "format": "",
+        "tooltip": false
+    },
+    "cpu": {
+        "format": "󰻠",
+        "tooltip": true
+    },
+    "memory": {
+        "format": ""
+    },
+    "temperature": {
+        "critical-threshold": 80,
+        "format": "",
+    },
+    "custom/endpoint":{
+        "format": "|",
+        "tooltip": false
+    },
+    "group/expand": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 600,
+            "transition-to-left": true,
+            "click-to-reveal": true
+        },
+        "modules": ["custom/expand",
+                    "cpu",
+                    "memory",
+                    "temperature",
+                    "custom/endpoint"]
+        
+    },
+    "custom/update": {
+        "interval": 86400, // check every 24 hours
+        "exec": "~/.config/scripts/update-check.sh",
+        "tooltip": "System Updates",
+        "on-click": "~/.config/scripts/update-all.sh",
+        "return-type": "text"
+    },
+    "network": {
+        "format-wifi": "",
+        "format-ethernet":"",
+        "format-disconnected": "",
+        "tooltip-format-disconnected": "Error",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "{ifname} 🖧 ",
+        "on-click": "kitty nmtui"
+    },
+    "battery": {
+        "interval":30,
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% 󰂄",
+        "format-plugged": "{capacity}% 󰂄 ",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["󰁻",
+                         "󰁼",
+                         "󰁾",
+                         "󰂀",
+                         "󰂂",
+                         "󰁹"]
+    }
+}
