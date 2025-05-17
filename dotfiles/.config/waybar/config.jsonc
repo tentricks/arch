@@ -65,9 +65,8 @@
     "custom/update": {
         "interval": 86400, // check every 24 hours
         "exec": "~/.config/scripts/update-check.sh",
-        "tooltip": "System Updates",
         "on-click": "~/.config/scripts/update-all.sh",
-        "return-type": "text"
+        "return-type": "json"
     },
     "network": {
         "format-wifi": "",

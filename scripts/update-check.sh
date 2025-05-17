@@ -6,7 +6,7 @@ AUR=$(yay -Qua 2>/dev/null | wc -l)
 TOTAL=$((UPDATES + AUR))
 
 if [ "$TOTAL" -eq 0 ]; then
-  echo " 0"
+  echo "{\"text\": \"\", \"tooltip\": \"System is up to date.\"}"
 else
-  echo " $TOTAL"
+  echo "{\"text\": \"\", \"tooltip\": \"$TOTAL updates available.\"}"
 fi
