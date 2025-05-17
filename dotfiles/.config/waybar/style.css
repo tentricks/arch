@@ -52,7 +52,7 @@ tooltip {
 }
 
 #workspaces button.active {
-  color: #acc9ff; /* cyan for active */
+  color: #acc9ff;
   font-weight: bold;
 }
 
@@ -63,6 +63,7 @@ tooltip {
 /* === NETWORK === */
 #network {
   color: #acc9ff;
+  padding: 0 7px;
 }
 
 #network.disconnected {
@@ -72,6 +73,7 @@ tooltip {
 /* === BATTERY === */
 #battery {
   color: #acc9ff;
+  padding: 0 7px;
 }
 
 #battery.charging {
@@ -80,4 +82,24 @@ tooltip {
 
 #battery.warning {
   color: #d08770;
+}
+
+/* === EXPANDER === */
+#custom-expand {
+  padding: 0 7px;
+}
+
+#custom-expand:hover {
+  color: #ffffff;
+}
+
+/* STATUS INDICATORS */
+#cpu {
+  padding: 0 7px;
+}
+#memory {
+  padding: 0 7px;
+}
+#temperature {
+  padding: 0 7px;
 }
