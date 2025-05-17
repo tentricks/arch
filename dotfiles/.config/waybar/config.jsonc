@@ -35,11 +35,13 @@
     },
     "cpu": {
         "format": "󰻠 {usage}%",
-        "tooltip": false
+        "tooltip": true,
+        "tooltup-format":"CPU Usage: {usage}"
     },
     "memory": {
-        "format": " {used:0.1f}G / {total:0.1f}G",
-        "tooltip": false
+        "format": " {percentage}%",
+        "tooltip": true,
+        "tooltip-format": "Memory Usage: {used:0.1f}G / {total:0.1f}G"
     },
     "temperature": {
         "critical-threshold": 80,
@@ -67,7 +69,8 @@
         "interval": 86400, // check every 24 hours
         "exec": "~/.config/scripts/update-check.sh",
         "on-click": "~/.config/scripts/update-all.sh",
-        "return-type": "json"
+        "return-type": "json",
+        "format": ""
     },
     "network": {
         "format-wifi": "",
