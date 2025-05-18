@@ -19,7 +19,7 @@
     },
 
     "clock": {
-        "format": "{:%H:%M} ",
+        "format": "{:%H:%M}",
         "interval": 1, 
         "tooltip-format": "<tt>{calendar}</tt>",
         "calendar": {
