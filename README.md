@@ -168,6 +168,9 @@ hyprctl reload
 ```
 
 ### Install an app launcher
+```
+yay -S rofi-lbonn-wayland
+```
 
 ### Install waybar
 ```
@@ -191,8 +194,6 @@ Add this to `~/.config/hypr/hyprland.conf`
 ```
 exec-once = mako
 ```
-
-### Install bars (menu and status panel)
 
 ### Install a lock screen
 
