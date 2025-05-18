@@ -185,7 +185,7 @@ cp -r /etc/xdg/waybar/* ~/.config/waybar/
 
 ### Install a notification daemon
 ```
-sudo pacman -S mako
+sudo pacman -S mako libnotify
 ```
 Add this to `~/.config/hypr/hyprland.conf`
 ```
