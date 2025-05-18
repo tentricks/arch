@@ -8,7 +8,7 @@
 /* === ISLANDS === */
 .modules-left {
     background-color: rgba(0, 0, 0, 0.4);
-    margin: 10px 0px 5px 0px;
+    margin: 10px 0px 5px 10px;
     border-radius: 10px;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
 }
@@ -94,11 +94,13 @@ tooltip {
 /* === UPDATER ===*/
 #custom-update {
     padding: 0 7px;
+    color:#acc9ff;
 }
 
 /* === EXPANDER === */
 #custom-expand {
     padding: 0 7px;
+    color:#acc9ff;
 }
 
 #custom-expand:hover {
