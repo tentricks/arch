@@ -11,12 +11,10 @@ DEST_SCRIPTS="$DEST_CONFIG/scripts"
 
 echo "Syncing configs..."
 
-# Copy waybar and hypr configs
-cp -r "$DOTFILES_DIR/waybar" "$DEST_CONFIG/"
-cp -r "$DOTFILES_DIR/hypr" "$DEST_CONFIG/"
-cp -r "$DOTFILES_DIR/mako" "$DEST_CONFIG/"
+# Copy configs
+rsync -a --exclude='.*' "$DOTFILES_DIR"/ "$DEST_CONFIG"/
 
-echo "Waybar and Hyprland configs copied."
+echo "Configs copied."
 
 # Ensure scripts directory exists
 mkdir -p "$DEST_SCRIPTS"
