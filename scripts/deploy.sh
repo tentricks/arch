@@ -14,6 +14,7 @@ echo "Syncing configs..."
 # Copy waybar and hypr configs
 cp -r "$DOTFILES_DIR/waybar" "$DEST_CONFIG/"
 cp -r "$DOTFILES_DIR/hypr" "$DEST_CONFIG/"
+cp -r "$DOTFILES_DIR/mako" "$DEST_CONFIG/"
 
 echo "Waybar and Hyprland configs copied."
 

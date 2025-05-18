@@ -184,6 +184,13 @@ cp -r /etc/xdg/waybar/* ~/.config/waybar/
 ```
 
 ### Install a notification daemon
+```
+sudo pacman -S mako
+```
+Add this to `~/.config/hypr/hyprland.conf`
+```
+exec-once = mako
+```
 
 ### Install bars (menu and status panel)
 
