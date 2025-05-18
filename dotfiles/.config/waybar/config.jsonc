@@ -5,13 +5,14 @@
 
     "reload_style_on_change": true,
 
-    "modules-left": ["tray",
-                     "clock"],
+    "modules-left": [],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["group/expand",
                       "custom/update",
                       "network",
-                      "battery"],
+                      "battery",
+                      "tray",
+                      "clock"],
     
     "tray": {
         "icon-size": 14,
