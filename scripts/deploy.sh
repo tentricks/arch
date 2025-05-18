@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define source paths
-REPO_DIR=../
+REPO_DIR="$(git rev-parse --show-toplevel)"
 DOTFILES_DIR="$REPO_DIR/dotfiles/.config"
 SCRIPTS_DIR="$REPO_DIR/scripts"
 

@@ -1,0 +1,9 @@
+#!/bin/bash
+# this runs the deployment script after pulling
+# add this separately on the local repo, as ".git/hooks/post-merge" then chmod +x
+
+REPO_ROOT=$(git rev-parse --show-toplevel)
+SCRIPT="$REPO_ROOT/scripts/deploy.sh"
+
+chmod +x "$SCRIPT"
+"$SCRIPT"
