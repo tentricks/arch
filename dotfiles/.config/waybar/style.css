@@ -107,6 +107,10 @@ tooltip {
     color: #ffffff;
 }
 
+#custom-endpoint {
+    color: #acc9ff;
+}
+
 /* STATUS INDICATORS */
 #cpu {
     padding: 0 7px;
