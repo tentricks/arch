@@ -110,10 +110,13 @@ tooltip {
 /* STATUS INDICATORS */
 #cpu {
     padding: 0 7px;
+    color:#acc9ff;
 }
 #memory {
     padding: 0 7px;
+    color:#acc9ff;
 }
 #temperature {
     padding: 0 7px;
+    color:#acc9ff;
 }
