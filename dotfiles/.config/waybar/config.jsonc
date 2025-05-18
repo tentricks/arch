@@ -100,7 +100,8 @@
             "warning": 30,
             "critical": 20
         },
-        "format": "{capacity}% {icon}",
+        "tooltip-format": "{capacity}%",
+        "format": "{icon}",
         "format-charging": "{capacity}% 󰂄",
         "format-plugged": "{capacity}% 󰂄 ",
         "format-alt": "{time} {icon}",
