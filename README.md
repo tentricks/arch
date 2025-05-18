@@ -110,7 +110,7 @@ sudo pacman -Syu
 ### 10. Installed minimal Hyprland setup
 
 ```
-sudo pacman -S hyprland wayland xdg-desktop-portal-hyprland wl-clipboard networkmanager kitty pacman-contrib
+sudo pacman -S hyprland wayland xdg-desktop-portal-hyprland wl-clipboard networkmanager kitty pacman-contrib rsync
 ```
 
 ---

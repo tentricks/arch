@@ -20,7 +20,7 @@
 
 configuration {
     show-icons: true;
-    display-drun: "";
+    display-drun: "";
 }
 
 window {
@@ -93,6 +93,7 @@ element alternate active {
 
 element selected normal, element selected active {
     background-color: @bg3;
+    text-color: @bg1;
 }
 
 element-icon {
