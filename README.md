@@ -258,3 +258,14 @@ pactree -d1 PACKAGE_NAME #show dependents
 ```
 pacman -Qi | awk '/^Name/{n=$3}/^Installed Size/{print $4, $5, n}' | sort -hr
 ```
+
+## Misc 
+
+### Add update script to visudo
+```
+sudo EDITOR=nano visudo
+```
+Add at the end, but above `@includedir /etc/sudoers.d`
+```
+<username> ALL=(ALL) NOPASSWD: /home/<username>/.config/scripts/update-all.sh
+```
