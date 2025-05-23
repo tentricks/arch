@@ -1,7 +1,5 @@
 #!/bin/bash
 
-notify-send "System Update" "Updating packages..."
-
 # Sync + upgrade system + AUR silently
 sudo pacman -Syu --noconfirm
 yay -Syu --noconfirm
@@ -14,5 +12,3 @@ fi
 
 # Clean package cache (keeping 3 versions)
 sudo paccache -r
-
-notify-send "System Update" "Update complete ✅"
